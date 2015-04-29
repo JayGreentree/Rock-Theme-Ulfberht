@@ -1,3 +1,8 @@
+/***** CSS for centralaz.com website of Central Christian Church of Az USA *****/
+/***** Created early 2015 *****/
+/***** Last modified May 2015 *****/
+/***** Theme codename: Ulfberht, after the mythical Nordic sword *****/
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -1245,7 +1250,7 @@ dt {
 dd {
   margin-left: 0;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .dl-horizontal dt {
     float: left;
     width: 160px;
@@ -1394,7 +1399,7 @@ h2.title-on-bottom {
     width: 970px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .container,
   h2.title-on-bottom {
     width: 1170px;
@@ -1891,7 +1896,7 @@ h2.title-on-bottom {
     margin-left: 0%;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
   }
@@ -3295,7 +3300,7 @@ tbody.collapse.in {
   bottom: 100%;
   margin-bottom: 1px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-right .dropdown-menu {
     left: auto;
     right: 0;
@@ -3827,12 +3832,12 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar {
     border-radius: 4px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-header {
     float: left;
   }
@@ -3848,7 +3853,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-collapse.in {
   overflow-y: auto;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-collapse {
     width: auto;
     border-top: 0;
@@ -3888,7 +3893,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-right: -15px;
   margin-left: -15px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .container > .navbar-header,
   .container-fluid > .navbar-header,
   .container > .navbar-collapse,
@@ -3901,7 +3906,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 1000;
   border-width: 0 0 1px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-static-top {
     border-radius: 0;
   }
@@ -3913,7 +3918,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   left: 0;
   z-index: 1030;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-fixed-top,
   .navbar-fixed-bottom {
     border-radius: 0;
@@ -3942,7 +3947,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-brand > img {
   display: block;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar > .container .navbar-brand,
   .navbar > .container-fluid .navbar-brand {
     margin-left: -15px;
@@ -3972,7 +3977,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-toggle .icon-bar + .icon-bar {
   margin-top: 4px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-toggle {
     display: none;
   }
@@ -4007,7 +4012,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     background-image: none;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-nav {
     float: left;
     margin: 0;
@@ -4089,7 +4094,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-bottom: 0;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-form {
     width: auto;
     border: 0;
@@ -4128,14 +4133,14 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-text {
     float: left;
     margin-left: 15px;
     margin-right: 15px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-left {
     float: left !important;
   }
@@ -6203,7 +6208,7 @@ h2.title-on-bottom:after {
     display: inline-block !important;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .visible-lg {
     display: block !important;
   }
@@ -6218,17 +6223,17 @@ h2.title-on-bottom:after {
     display: table-cell !important;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .visible-lg-block {
     display: block !important;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .visible-lg-inline {
     display: inline !important;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .visible-lg-inline-block {
     display: inline-block !important;
   }
@@ -6248,7 +6253,7 @@ h2.title-on-bottom:after {
     display: none !important;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .hidden-lg {
     display: none !important;
   }
@@ -6345,7 +6350,7 @@ a.navbar-brand:active {
 .navbar-nav li a:focus {
   color: #9fbb99 !important;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .nav-bar-nav,
   .navbar-nav li a {
     padding: 20px 10px;
@@ -6368,7 +6373,7 @@ a.navbar-brand:active {
 #search span {
   color: #ffffff;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   #search {
     background: #9fbb99;
     border-color: #9fbb99;
@@ -6398,7 +6403,7 @@ a.navbar-brand:active {
   float: left;
   padding-left: 10px;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-main {
     margin-right: 10px;
     padding-left: 0;
@@ -6417,7 +6422,7 @@ a.navbar-brand:active {
 .navbar-secondary li a {
   color: #ffffff !important;
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   .navbar-secondary {
     background: #333332;
     border-radius: 0;
@@ -6432,7 +6437,7 @@ a.navbar-brand:active {
     text-decoration: none;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1115px) {
   div.ul-container {
     float: right;
     margin-right: 60px;
@@ -7062,7 +7067,7 @@ a.widget:focus [class*=cat-]:before {
     height: 292px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .homepage-tab-left-column {
     height: 756px;
   }
@@ -7106,7 +7111,7 @@ a.widget:focus [class*=cat-]:before {
     width: 50px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .campus-tabs .nav.nav-tabs li a img {
     height: 70px;
     width: 63px;
@@ -7149,7 +7154,7 @@ a.widget:focus [class*=cat-]:before {
     margin-top: 90px;
   }
 }
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
   .map-campus-me {
     height: 450px;
     margin-top: 90px;
