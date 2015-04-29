@@ -72,8 +72,7 @@
         
             <!-- Brand Bar -->
             <nav class="navbar navbar-default navbar-fixed-top">
-                <div class="container-fluid">
-					
+                <div class="container-fluid">					
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
@@ -130,6 +129,7 @@
 				<li><a href="#">Our Purpose</a></li>
 			</ul>
 		</div>
+			
 		<div class="col-xs-6 col-md-2">
 			<ul>
 				<Rock:Zone Name="Footer2" runat="server" />
@@ -141,6 +141,7 @@
 				<li><a href="#">Calendar</a></li>
 			</ul>
 		</div>
+			
 		<div class="col-xs-6 col-md-2">
 			<ul>
 				<Rock:Zone Name="Footer3" runat="server" />
@@ -153,6 +154,7 @@
 				<li><a href="#">Devotionals</a></li>
 			</ul>
 		</div>
+			
 		<div class="col-xs-6 col-md-2">
 			<ul>
 				<Rock:Zone Name="Footer4" runat="server" />
@@ -165,6 +167,7 @@
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</div>
+			
 		<div class="col-xs-12 col-md-2">
 			<nav class="social-nav">
 				<Rock:Zone Name="Footer5" runat="server" />
@@ -193,8 +196,6 @@
                     <div class="updateprogress-bg modal-backdrop"></div>
 		        </ProgressTemplate>
         </asp:UpdateProgress>
-
-
     </form>
 
 </body>
