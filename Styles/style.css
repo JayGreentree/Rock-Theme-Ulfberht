@@ -6466,6 +6466,7 @@ footer.site-footer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+	margin-bottom: 0px; /* to counteract Rock Form styling */
 }
 footer.site-footer ul {
   list-style: none;
@@ -7183,6 +7184,22 @@ a.widget:focus [class*=cat-]:before {
   right: 0;
   width: 300px;
 }
+.video-wrapper .checkin {
+  bottom: 550px !important;
+}
+.video-wrapper .locations {
+  bottom: 450px !important;
+}
+.video-wrapper .prayer {
+  bottom: 350px !important;
+}
+.video-wrapper .message {
+  bottom: 250px !important;
+}
+.video-wrapper .give {
+  bottom: 150px !important;
+}
+
 @media (min-width: 768px) {
   .video-wrapper button.button {
     bottom: 150px;
@@ -7461,7 +7478,7 @@ h2.title-on-bottom {
   background-size: 100px;
 }
 [class*=bg-image-] {
-  overflow: hidden;
+  overflow: hidden; /* caused margins to appear on stacked item */
   position: relative;
 }
 [class*=bg-image-]:before {
@@ -7640,6 +7657,10 @@ h2.title-on-bottom {
 	border-color: #707273 !important;	
 }
 
+/******* feature class for ministry pages ********/
+.feature{
+	height: 300px !important;
+}
 
 /******* Focus classes ********/
 
