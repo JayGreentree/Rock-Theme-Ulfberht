@@ -2170,6 +2170,7 @@ dl:not(.dl-horizontal) dd {
 .form-control-group .input-group {
   margin-right: 6px;
   float: left;
+	border-color: #cccccc;
 }
 .form-control-group > span {
   float: left;
@@ -5005,6 +5006,9 @@ div.aspNetDisabled {
     4. Responsive Overrides 
 
 */
+
+/***** Ommitted to resolve conflicts with Ulfberht *****/
+/*
 main {
   display: block;
 }
@@ -5083,6 +5087,8 @@ footer .footer-address {
   position: relative;
   top: -12px;
 }
+
+*/
 /* hide block panels */
 .panel.panel-block {
   border: 0;
