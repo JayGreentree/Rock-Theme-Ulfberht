@@ -6408,6 +6408,20 @@ a.navbar-brand:active {
     margin-right: 10px;
     padding-left: 0;
   }
+	.navbar-main li:hover ul.hoverDown{
+		display: block !important;
+		opacity: 1;
+		background-color: #000000;
+		position: fixed;
+		z-index: 9001;
+		padding-bottom: 15px;
+		list-style-type: none;
+		list-style-position: inside;
+		list-style: none;
+	}
+	#headSubNav{
+		margin: 5px;
+	}
 }
 .navbar-secondary {
   -webkit-box-sizing: border-box;
@@ -6682,6 +6696,7 @@ a.view-all {
   text-align: center;
   top: 30px;
   width: 100%;
+	z-index: 2001;
 }
 @media (min-width: 992px) {
   a.view-all {
@@ -7148,14 +7163,74 @@ a.widget:focus [class*=cat-]:before {
   height: 400px;
   margin-top: 50px;
 }
+.map-campus-gi {
+  background: url(../img/campus-gi-map.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-top: 50px;
+}
+.map-campus-qc {
+  background: url(../img/campus-qc-map.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-top: 50px;
+}
+.map-campus-gl {
+  background: url(../img/campus-gl-map.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-top: 50px;
+}
+.map-campus-ah {
+  background: url(../img/campus-ah-map.jpg);
+  background-size: cover;
+  height: 400px;
+  margin-top: 50px;
+}
 @media (min-width: 992px) {
   .map-campus-me {
+    height: 414px;
+    margin-top: 90px;
+  }
+	.map-campus-gi {
+    height: 414px;
+    margin-top: 90px;
+  }
+	.map-campus-qc {
+    height: 414px;
+    margin-top: 90px;
+  }
+	.map-campus-gl {
+    height: 414px;
+    margin-top: 90px;
+  }
+	.map-campus-ah {
     height: 414px;
     margin-top: 90px;
   }
 }
 @media (min-width: 1200px) {
   .map-campus-me {
+    height: 450px;
+    margin-top: 90px;
+    width: 100%;
+  }
+	.map-campus-gi {
+    height: 450px;
+    margin-top: 90px;
+    width: 100%;
+  }
+	.map-campus-qc {
+    height: 450px;
+    margin-top: 90px;
+    width: 100%;
+  }
+	.map-campus-gl {
+    height: 450px;
+    margin-top: 90px;
+    width: 100%;
+  }
+	.map-campus-ah {
     height: 450px;
     margin-top: 90px;
     width: 100%;
@@ -7188,21 +7263,6 @@ a.widget:focus [class*=cat-]:before {
   position: absolute;
   right: 0;
   width: 300px;
-}
-.video-wrapper .checkin {
-  bottom: 550px !important;
-}
-.video-wrapper .locations {
-  bottom: 450px !important;
-}
-.video-wrapper .prayer {
-  bottom: 350px !important;
-}
-.video-wrapper .message {
-  bottom: 250px !important;
-}
-.video-wrapper .give {
-  bottom: 150px !important;
 }
 
 @media (min-width: 768px) {
@@ -7606,8 +7666,6 @@ h2.title-on-bottom {
 .bg-image-home-series {
   background: url(../img/home-series.jpg) no-repeat;
   background-size: cover;
-	/*background-position: 50% 50%; */
-  /*position: relative;  original, this was only insufficient because it would not hold focus on the center of the image*/
 }
 .bg-image-home-series a.button {
   bottom: 100px;
@@ -7662,6 +7720,15 @@ h2.title-on-bottom {
 	border-color: #707273 !important;	
 }
 
+/******* Nav HoverDown ********/
+.hoverDown{
+	background-color: #efefef;
+	color: 333332;
+	display: none;
+	position: relative;
+	z-index: 9001;	
+}
+
 /******* feature class for ministry pages ********/
 .feature{
 	height: 300px !important;
@@ -7704,7 +7771,49 @@ h2.title-on-bottom {
 	background-position: center bottom;
 }
 
+/******* mobile landing classes ********/
+.checkin {
+  text-align: center;
+  bottom: 650px;
+  display: block;
+  margin: auto !important;
+  position: absolute;
+  width: 300px;
+}
+.locations {
+  text-align: center;
+  bottom: 600px;
+  display: block;
+  margin: auto !important;
+  position: absolute;
+  width: 300px;
+}
+.prayer {
+  text-align: center;
+  bottom: 550px;
+  display: block;
+  margin: auto !important;
+  position: absolute;
+  width: 300px;
+}
+.message {
+  text-align: center;
+  bottom: 500px;
+  display: block;
+  margin: auto !important;
+  position: absolute;
+  width: 300px;
+}
+.give {
+  text-align: center;
+  bottom: 450px;
+  display: block;
+  margin: auto !important;
+  position: absolute;
+  width: 300px;
+}
 
+/******* ??? classes ********/
 .Central-logo{
 	position: fixed; 
 	left: 15px; 
