@@ -5,7 +5,7 @@
             <li {% if childPage.Current == 'true' %} class="active"{% endif%}>
 				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a> 
 				
-				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != empty %}
+				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
 					<ul class="hoverDown">
 					{% for subchildPage in childPage.Pages %}
 						<li><a id="headSubNav" href="{{ subchildPage.Url }}">{{ subchildPage.Title }}</a></li> 
