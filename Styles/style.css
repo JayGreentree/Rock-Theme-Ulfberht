@@ -6408,19 +6408,31 @@ a.navbar-brand:active {
     margin-right: 10px;
     padding-left: 0;
   }
+	.hoverdown{
+		-webkit-transition: width 2s;
+    	transition: width 2s;
+	}
 	.navbar-main li:hover ul.hoverDown{
 		display: block !important;
 		opacity: 1;
-		background-color: #000000;
+		background-color: #333332;
 		position: fixed;
 		z-index: 9001;
-		padding-bottom: 15px;
+		padding-bottom: 10px;
+		padding-top: 5px;
 		list-style-type: none;
 		list-style-position: inside;
 		list-style: none;
+		margin-left: 0;
+   		padding-left: 0;
+		padding-bottom: 5px;
+		margin-bottom: 0px;
+		min-width: 158px
 	}
-	#headSubNav{
-		margin: 5px;
+	ul.hoverDown li a:hover{
+		text-decoration: none;
+		color: #76908b !important;
+		line-height: 1.68em;
 	}
 }
 .navbar-secondary {
