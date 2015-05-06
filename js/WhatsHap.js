@@ -48,20 +48,6 @@ function WhatsHap()
 		else
 		{
 			document.getElementById(imgID).className = "square";
-
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
