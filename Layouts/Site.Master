@@ -108,7 +108,7 @@
 
                     <div id="search">
                         <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-						<input type="text"  class="searchBar" placeholder="What are you looking for?">
+						<input type="text" id="searchBar"  class="searchBar" placeholder="What are you looking for?">
                     </div>
                 </div>
             </nav>
