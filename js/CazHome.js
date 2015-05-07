@@ -51,3 +51,25 @@ function WhatsHap()
 		}
 	}
 }
+
+function randoBack()
+}
+	$('.bg-image-003').css('background-image', url(../img/image-004.jpg) no-repeat))
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
