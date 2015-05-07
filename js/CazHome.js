@@ -55,6 +55,16 @@ function WhatsHap()
 function randoBack()
 }
 	$('.bg-image-003').css('background-image', url(../img/image-004.jpg) no-repeat))
+	
+	// initialize array of possibilities with string values to be parsed
+	
+	// seed random numb gen, time
+	
+	// take modulus of time to whatever the array sizeToContent
+	
+	// clear all background properties
+	
+	// set image attributes
 }
 
 
