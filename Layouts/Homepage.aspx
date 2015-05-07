@@ -3,7 +3,7 @@
 
 <asp:Content ID="ctFeature" ContentPlaceHolderID="feature" runat="server">
 	
-	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", true) %>"></script>
+	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", false) %>"></script>
 	<script type="text/javascript">
 		$("section").fitVids();
 		$(document).ready(function() {
