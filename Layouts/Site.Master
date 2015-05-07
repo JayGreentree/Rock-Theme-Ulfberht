@@ -45,7 +45,6 @@
 	<script>try{Typekit.load();}catch(e){}</script> -->
     <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js", true) %>" ></script>
 	<script src="<%# ResolveRockUrl("~~/assets/js/jquery.fitvids.js", true) %>"></script>
-	<script src="<%# ResolveRockUrl("~~/js/WhatsHap.js", true) %>"></script>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 <!--[if lt IE 9]>
