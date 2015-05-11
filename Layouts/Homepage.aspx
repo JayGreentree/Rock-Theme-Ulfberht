@@ -2,8 +2,6 @@
 	
 
 <asp:Content ID="ctFeature" ContentPlaceHolderID="feature" runat="server">
-	
-	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", false) %>"></script>
 	<script type="text/javascript">
 		$("section").fitVids();
 		$(document).ready(function() {
@@ -15,6 +13,11 @@
 				$('#Calwelcome').attr("src", "//player.vimeo.com/video/62172388?color=f0a400&badge=0&autoplay=1");
 			 });
 	    });
+		/* Home for all js page load function calls */
+		$(document).ready(function (){
+    		randoBack();
+			WhatsHap();
+		});
 	</script>
 
     <section class="main-feature">
