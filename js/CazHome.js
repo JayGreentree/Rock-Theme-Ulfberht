@@ -1,9 +1,9 @@
-/***** WhatsHap.js *****/
+/***** CazHome.js *****/
 
 /*****
 Author: Kreston Lee, Front End Dev for Central Christian Church Arizona
 Date Created: 4/16/2015
-Last Modified: 4/16/2015
+Last Modified: 5/11/2015
 
 This function grabs all 8 "What Happening at Central" img items and checks their aspect ratio.
 The number created is used to assign a CSS class to more robustly display the image.
@@ -53,25 +53,41 @@ function WhatsHap()
 }
 
 function randoBack()
-}
-	$('.bg-image-003').css('background-image', url(../img/image-004.jpg) no-repeat))
+{
+	$("#section-feature").css("background-position","50% 50%");
+	//$("#section-feature").css("background-image" , "url(Themes/Ulfberht/img/image-017.jpg)");
 	
 	// initialize array of possibilities with string values to be parsed
+	var my_imgs = new Array();
+	var my_imgs_focus = new Array();
+
+	/* Set image URLs */
+	my_imgs[0] = "002";
+	my_imgs[1] = "003";
+	my_imgs[2] = "004";
+	my_imgs[3] = "005";
+	my_imgs[4] = "007";
+	my_imgs[5] = "008";
 	
-	// seed random numb gen, time
+	// for 6-31 increment/set starting at 17	
+	for( var i = 6; i <= 30; i++)
+	{
+		my_imgs[i] = "0" + (i + 11);
+	}
+
+
+	/* focal points *//*
+	my_imgs_focus[0] = "http://www.centralaz.com/Launch"; 
+	my_imgs_focus[1] = "http://www.centralaz.com/summit";
+	my_imgs_focus[2] = "https://www.centralaz.com/Arena/default.aspx?page=4222&eventId=9019";
+	*/
 	
-	// take modulus of time to whatever the array sizeToContent
-	
-	// clear all background properties
+	// seed random numb gen, time?
+	var ran_num = Math.floor(Math.random()*(my_imgs.length));
 	
 	// set image attributes
+	$("#section-feature").css("background-image" , "url(Themes/Ulfberht/img/image-" + my_imgs[ran_num] + ".jpg)");
 }
-
-
-
-
-
-
 
 
 
