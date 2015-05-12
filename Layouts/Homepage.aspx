@@ -35,7 +35,7 @@
 	<main>
         
         <!-- Start Content Area -->
-        <div class="container">
+        <div class="container hidden-xs">
         <!-- Ajax Error -->
         <div class="alert alert-danger ajax-error" style="display:none">
             <p><strong>Error</strong></p>
@@ -56,7 +56,7 @@
         </div>
 			</div>
 		<section class="container-fluid">
-			<div class="col-md-6 callout-half-width typ-white bg-image-016 homepage-tab-left-column focus-CenterTop">
+			<div class="col-md-6 callout-half-width typ-white bg-image-016 homepage-tab-left-column" style=" background-position: 35% 0%; ">
 				<Rock:Zone Name="Verse" runat="server" />
 			</div>
 			<div class="col-md-6 callout-half-width typ-white bg-color-grey-dark campus-tabs">
