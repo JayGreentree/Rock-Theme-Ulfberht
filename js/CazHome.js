@@ -54,9 +54,7 @@ function WhatsHap()
 
 function randoBack()
 {
-	$("#section-feature").css("background-position","50% 50%");
-	//$("#section-feature").css("background-image" , "url(Themes/Ulfberht/img/image-017.jpg)");
-	
+
 	// initialize array of possibilities with string values to be parsed
 	var my_imgs = new Array();
 	var my_imgs_focus = new Array();
@@ -70,23 +68,52 @@ function randoBack()
 	my_imgs[5] = "008";
 	
 	// for 6-31 increment/set starting at 17	
-	for( var i = 6; i <= 30; i++)
+	for( var i = 6; i <= 25; i++)
 	{
 		my_imgs[i] = "0" + (i + 11);
 	}
 
 
-	/* focal points *//*
-	my_imgs_focus[0] = "http://www.centralaz.com/Launch"; 
-	my_imgs_focus[1] = "http://www.centralaz.com/summit";
-	my_imgs_focus[2] = "https://www.centralaz.com/Arena/default.aspx?page=4222&eventId=9019";
-	*/
+	/* focal points, hand picked and coded */
+	my_imgs_focus[0] = 7820; 
+	my_imgs_focus[1] = 5050;
+	my_imgs_focus[2] = 6560;
+	my_imgs_focus[3] = 5070;
+	my_imgs_focus[4] = 5090;
+	my_imgs_focus[5] = 4080;
+	my_imgs_focus[6] = 5075;
+	my_imgs_focus[7] = 5050;
+	my_imgs_focus[8] = 4550;
+	my_imgs_focus[9] = 1830;
+	my_imgs_focus[10] = 4060; 
+	my_imgs_focus[11] = 3550;
+	my_imgs_focus[12] = 2545;
+	my_imgs_focus[13] = 7140;
+	my_imgs_focus[14] = 8010;
+	my_imgs_focus[15] = 3050;
+	my_imgs_focus[16] = 6360;
+	my_imgs_focus[17] = 5580;
+	my_imgs_focus[18] = 1870;
+	my_imgs_focus[19] = 4040;
+	my_imgs_focus[20] = 3565; 
+	my_imgs_focus[21] = 7940;
+	my_imgs_focus[22] = 4030;
+	my_imgs_focus[23] = 1480;
+	my_imgs_focus[24] = 5535;
+	my_imgs_focus[25] = 1060;	
 	
 	// seed random numb gen, time?
 	var ran_num = Math.floor(Math.random()*(my_imgs.length));
 	
 	// set image attributes
 	$("#section-feature").css("background-image" , "url(Themes/Ulfberht/img/image-" + my_imgs[ran_num] + ".jpg)");
+	
+	//set focus
+	var Fvalues = String(my_imgs_focus[ran_num]);
+	var F1 = Fvalues.substr(0,2);
+	var F2 = Fvalues.substr(2);
+	
+	$("#section-feature").css("background-position", F1 + "% " + F2 + "%");
 }
 
 
