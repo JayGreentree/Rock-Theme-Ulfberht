@@ -240,7 +240,7 @@ img.jcrop-preview {
   position: absolute;
   top: 2px;
   width: 26px;
-  z-index: 1049;
+  z-index: 9005 !important;
 }
 .block-instance.outline {
   min-height: 36px;
