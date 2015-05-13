@@ -26,7 +26,7 @@
 	
     <title></title>
 	
-	<script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js", true) %>"></script>
+	<script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js", false) %>"></script>
 
     <!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -35,17 +35,17 @@
 
 	
 	<!-- Included CSS Files -->
-	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/bootstrap.css", true) %>"/>
-	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/RockUtils.css", true) %>"/>
-	<link rel="stylesheet" href="<%# ResolveRockUrl("~/Styles/developer.css", true) %>"/>
+	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/bootstrap.css", false) %>"/>
+	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/RockUtils.css", false) %>"/>
+	<link rel="stylesheet" href="<%# ResolveRockUrl("~/Styles/developer.css", false) %>"/>
 	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/style.css", true) %>"/>
     <link rel="stylesheet" type="text/css" href="//cloud.typography.com/7260332/771266/css/fonts.css" />
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
     	<!--<script src="//use.typekit.net/mmd0syh.js"></script> 
 	<script>try{Typekit.load();}catch(e){}</script> -->
-    <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js", true) %>" ></script>
-	<script src="<%# ResolveRockUrl("~~/assets/js/jquery.fitvids.js", true) %>"></script>
-	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", false) %>"></script>
+    <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js", false) %>" ></script>
+	<script src="<%# ResolveRockUrl("~~/assets/js/jquery.fitvids.js", false) %>"></script>
+	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", true) %>"></script>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	
 <!--[if lt IE 9]>
@@ -56,7 +56,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
 
     <!-- Icons -->
-    <link rel="shortcut icon" href="<%# ResolveRockUrl("~~/img/favicon.ico", true) %>">
+    <link rel="shortcut icon" href="<%# ResolveRockUrl("~~/img/favicon.ico", false) %>">
    <!-- /*<link rel="apple-touch-icon-precomposed" sizes="144x144" href="<%# ResolveRockUrl("~/Assets/Icons/touch-icon-ipad-retina.png", true) %>">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<%# ResolveRockUrl("~/Assets/Icons/touch-icon-iphone-retina.png", true) %>">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<%# ResolveRockUrl("~/Assets/Icons/touch-icon-ipad.png", true) %>">
