@@ -1387,6 +1387,13 @@ h2.title-on-bottom {
   padding-right: 15px;
 	overflow-x: hidden;
 }
+/* query added to keep class from hugging left on mobile */
+@media (max-width: 767px) {
+  .container,
+  h2.title-on-bottom {
+    left: 15px !important;
+  }
+}
 @media (min-width: 768px) {
   .container,
   h2.title-on-bottom {
@@ -7851,6 +7858,14 @@ h2.title-on-bottom {
 		z-index: 9001;
 		margin-right: -960px;
 	}
+}
+.Campus-feature{
+	height: 600px;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	width: 100%;
+	overflow: hidden;
 }
 
 /******* Handlers for "WhatsHappening" area ********/
