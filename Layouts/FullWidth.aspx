@@ -13,22 +13,27 @@
             <p><strong>Error</strong></p>
             <span class="ajax-error-message"></span>
         </div>
+		<section>
+			<div class="container-fluid">
+				<div class="row">
+					<Rock:Zone Name="Feature" runat="server" />
+				</div>
+			</div>
+    	</section>
 		<section class="container-fluid">
-        <div class="row">
-                <Rock:Zone Name="Feature" runat="server" />
-        </div>
-		</section>
 			<div class="row">
-            <div class="col-md-12">
-                <Rock:Zone Name="Main" runat="server" />
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <Rock:Zone Name="Section A" runat="server" />
-            </div>
-        </div>
+				<div class="col-md-12">
+					<Rock:Zone Name="Main" runat="server" />
+				</div>
+        	</div>
+		</section>
+		<section class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<Rock:Zone Name="Section A" runat="server" />
+				</div>
+			</div>
+		</section>
 
         <div class="row">
             <div class="col-md-4">
