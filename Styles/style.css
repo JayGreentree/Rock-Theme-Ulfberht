@@ -26,6 +26,7 @@ nav,
 section,
 summary {
   display: block;
+	overflow-x: hidden;
 }
 audio,
 canvas,
@@ -6420,8 +6421,8 @@ a.navbar-brand:active {
 		-webkit-transition: width 2s;
     	transition: width 2s;
 	}
-	.navbar-main li:hover ul.hoverDown{
-		display: block !important;
+	.navbar-main li:hover .hoverDown{
+		display: block;
 		opacity: 1;
 		background-color: #333332;
 		position: fixed;
@@ -6436,6 +6437,10 @@ a.navbar-brand:active {
 		padding-bottom: 5px;
 		margin-bottom: 0px;
 		min-width: 158px
+	}
+	ul.hoverDown li a{
+		padding: 10px 5px;
+		margin: 20px 5px;
 	}
 	ul.hoverDown li a:hover{
 		text-decoration: none;
@@ -7748,7 +7753,6 @@ h2.title-on-bottom {
 	position: relative;
 	z-index: 9001;	
 }
-
 /******* feature class for ministry pages ********/
 .feature{
 	height: 300px !important;
