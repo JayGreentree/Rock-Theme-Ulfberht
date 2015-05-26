@@ -11,6 +11,7 @@ html {
 }
 body {
   margin: 0;
+	overflow-x: hidden;
 }
 article,
 aside,
@@ -26,7 +27,6 @@ nav,
 section,
 summary {
   display: block;
-	overflow-x: hidden;
 }
 audio,
 canvas,
