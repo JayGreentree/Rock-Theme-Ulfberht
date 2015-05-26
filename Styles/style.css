@@ -908,18 +908,22 @@ textarea {
   line-height: inherit;
 }
 a {
-  color: #337ab7;
+  color: #9fbb99;
   text-decoration: none;
 }
 a:hover,
 a:focus {
-  color: #23527c;
+  color: #76908b;
   text-decoration: underline;
 }
 a:focus {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
+}
+a:visited {
+  color: #76908b;
+  text-decoration: none;
 }
 figure {
   margin: 0;
