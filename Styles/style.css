@@ -7876,6 +7876,45 @@ h2.title-on-bottom {
 	overflow: hidden;
 }
 
+/******* Directions page classes ********/
+h3.Directions{
+	margin-bottom: 16.18px;
+}
+.feature-Directions{
+	height: 200px;
+}
+div.Directions{
+	display: none;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 50px;
+}
+ul.Directions{
+	border-bottom: none !important;
+}
+li.Directions{
+	padding: 16.18px;
+	margin: 16.18px;
+	margin-top: 0px;
+	padding-top: -16.18px;
+	border-bottom: none !important;
+}
+li.Directions:hover{
+   background: #707372; 
+   -moz-border-radius: 50px; 
+   -webkit-border-radius: 50px; 
+   border-radius: 50px;
+}
+@media (min-width: 1280px){
+	div.Directions{
+		display: table !important;
+	}
+	.feature-Directions{
+		height: 400px;
+	}
+}
+
+
 /******* Handlers for "WhatsHappening" area ********/
 
 a.widget .widget-image img.portrait {
