@@ -7439,7 +7439,6 @@ input[type="text"]:focus {
   }
 }
 .campus-full {
-  background: url(../img/campus-me.svg) no-repeat;
   background-size: 200px;
   display: block;
   height: 250px;
@@ -7874,6 +7873,103 @@ h2.title-on-bottom {
 	text-align: center;
 	width: 100%;
 	overflow: hidden;
+}
+.Campus-wrapper{
+	margin-top: 100px;
+}
+.campus-full-me {
+  background: url(../img/campus-me.svg) no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 250px;
+  left: 0;
+  margin: 60px auto 60px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 10;
+}
+.campus-full-gi {
+  background: url(../img/campus-gi.svg) no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 250px;
+  left: 0;
+  margin: 60px auto 60px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 10;
+}
+.campus-full-qc {
+  background: url(../img/campus-qc.svg) no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 250px;
+  left: 0;
+  margin: 60px auto 60px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 10;
+}
+.campus-full-gl {
+  background: url(../img/campus-gl.svg) no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 250px;
+  left: 0;
+  margin: 60px auto 60px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 10;
+}
+.campus-full-ah {
+  background: url(../img/campus-ah.svg) no-repeat;
+  background-size: 200px;
+  display: block;
+  height: 250px;
+  left: 0;
+  margin: 60px auto 60px;
+  position: absolute;
+  right: 0;
+  width: 200px;
+  z-index: 10;
+}
+.feature-on-bottom-navbar {
+  bottom: 0;
+  padding-left: 20px;
+  text-align: left;
+  z-index: 10;
+	position: absolute;
+	width: 100%;
+}
+.feature-on-bottom-nav {
+	width: 800px;
+	margin-left: 50%;
+	margin-right: 50%;
+  text-align: center;
+  z-index: 10;
+	position: relative;
+}
+.feature-on-bottom-nav li {
+  float: left;
+	padding-left: 0.618%;
+	padding-right: 0.618%;
+}
+.feature-on-bottom-navbar:after {
+  background: rgba(0, 0, 0, 0.6);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 61px;
+  left: 0;
+  position: absolute;
+  width: 100%;
+}
+.feature-on-bottom-nav li a:hover {
+	background: none;
 }
 
 /******* Directions page classes ********/
