@@ -1421,8 +1421,8 @@ h2.title-on-bottom {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0px;
+  padding-right: 0px;
 	overflow-x: hidden;
 	max-width: 1920px;
 }
@@ -6443,7 +6443,7 @@ a.navbar-brand:active {
 		min-width: 158px
 	}
 	ul.hoverDown li a{
-		padding: 10px 5px;
+		padding: 8px 5px;
 		margin: 20px 5px;
 	}
 	ul.hoverDown li a:hover{
@@ -7866,6 +7866,8 @@ h2.title-on-bottom {
 		margin-right: -960px;
 	}
 }
+
+/******* Campus Page classes ********/
 .Campus-feature{
 	height: 600px;
 	padding: 0;
@@ -7945,6 +7947,11 @@ h2.title-on-bottom {
 	position: absolute;
 	width: 100%;
 }
+@media (max-width: 1280px){
+	.feature-on-bottom-navbar {
+	  display: none;
+	}
+}
 .feature-on-bottom-nav {
 	width: 800px;
 	margin-left: 50%;
@@ -7959,7 +7966,7 @@ h2.title-on-bottom {
 	padding-right: 0.618%;
 }
 .feature-on-bottom-navbar:after {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.48);
   bottom: 0;
   content: "";
   display: block;
@@ -7971,10 +7978,57 @@ h2.title-on-bottom {
 .feature-on-bottom-nav li a:hover {
 	background: none;
 }
+.campus-button-directions{
+  text-align: center;
+  bottom: -150px;
+  display: block;
+  margin: auto !important;
+  position: relative;
+  width: 300px;
+}
+.campus-text-directions{
+  text-align: center;
+  bottom: -50px;
+  display: block;
+}
+.campus-connection-row{
+  height: 350px;
+}
+.campus-bg-img{
+  height: 700px;
+  width: 100%;
+  padding-bottom: -2px;
+}
+.campus-bg-img:before{
+  background: none;	
+}
+.campus-connect{
+  text-align: center;
+  bottom: -30px;
+	width: 300px;
+}
+.campus-bg-color-green:before {
+  background: rgba(59, 87, 53, 0.35);
+}
+.feature-on-bottom-nav .social-nav{
+	padding-top: 10px;
+	text-align: center;
+}
 
 /******* Directions page classes ********/
 h3.Directions{
 	margin-bottom: 16.18px;
+}
+h3.Directions a{
+	text-decoration: none;
+	color: #333333;
+}
+h3.Directions a:hover{
+	text-decoration: underline;
+	color: #76908b;
+}
+h3.Directions a:hover:after{
+	content: " >";
 }
 .feature-Directions{
 	height: 200px;
@@ -8000,6 +8054,7 @@ li.Directions:hover{
    -moz-border-radius: 50px; 
    -webkit-border-radius: 50px; 
    border-radius: 50px;
+	cursor: pointer;
 }
 @media (min-width: 1280px){
 	div.Directions{
@@ -8010,9 +8065,7 @@ li.Directions:hover{
 	}
 }
 
-
 /******* Handlers for "WhatsHappening" area ********/
-
 a.widget .widget-image img.portrait {
 	width: 100%;
 }
