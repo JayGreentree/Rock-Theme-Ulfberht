@@ -1,6 +1,4 @@
 <%@ Page Language="C#" MasterPageFile="Site.Master" AutoEventWireup="true" Inherits="Rock.Web.UI.RockPage" %>
-	
-
 <asp:Content ID="ctFeature" ContentPlaceHolderID="feature" runat="server">
 	<script type="text/javascript">
 		$("section").fitVids();
@@ -19,21 +17,16 @@
 			WhatsHap();
 		});
 	</script>
-
-    <section class="main-feature">
-        <div class="container-fluid">
-            <div class="row">
-				<Rock:Zone Name="Feature" runat="server" />
-            </div>
-        </div>
-    </section>
-
+<section class="main-feature">
+	<div class="container-fluid">
+		<div class="row">
+			<Rock:Zone Name="Feature" runat="server" />
+		</div>
+	</div>
+</section>
 </asp:Content>
-
 <asp:Content ID="ctMain" ContentPlaceHolderID="main" runat="server">
-    
 	<main>
-        
         <!-- Start Content Area -->
         <div class="container hidden-xs">
         <!-- Ajax Error -->
@@ -41,14 +34,11 @@
             <p><strong>Error</strong></p>
             <span class="ajax-error-message"></span>
         </div>
-		
-
         <div class="row">
             <div class="col-md-12">
                 <Rock:Zone Name="Sub Feature" runat="server" />
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
                 <Rock:Zone Name="Section A" runat="server" />
@@ -69,10 +59,6 @@
 				<Rock:Zone Name="Newsletter" runat="server" />
 			</div>
 		</section>
-
         <!-- End Content Area -->
-
 	</main>
-        
 </asp:Content>
-
