@@ -1421,8 +1421,8 @@ h2.title-on-bottom {
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 0px;
-  padding-right: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
 	overflow-x: hidden;
 	max-width: 1920px;
 }
