@@ -6778,7 +6778,7 @@ h2.title-on-bottom {
     background-position: center;*/
 }
 .container-fluid {
-  padding: 0;
+  padding: 0px;
   position: relative;
 	max-width: 1920px;
 	overflow: hidden;
@@ -8031,7 +8031,7 @@ h3.Directions a:hover:after{
 	content: " >";
 }
 .feature-Directions{
-	height: 200px;
+	height: 400px;
 }
 div.Directions{
 	display: none;
@@ -8060,9 +8060,31 @@ li.Directions:hover{
 	div.Directions{
 		display: table !important;
 	}
-	.feature-Directions{
-		height: 400px;
+	ul.direction-buttons{
+		display: none;
 	}
+}
+@media (max-width: 1279px){
+	.feature-Directions{
+		height: 600px;
+	}
+	.directions-title{
+		display: none;
+	}
+}
+ul.direction-buttons li{
+	margin-top: 40px;
+}
+ul.direction-buttons{
+	list-style-type: none;
+	width: 100%;
+	height: 600px;
+}
+ul.direction-buttons li button.button{
+  text-align: center;
+  display: block;
+  margin: auto !important;
+  width: 250px;
 }
 
 /******* Handlers for "WhatsHappening" area ********/
@@ -8097,3 +8119,10 @@ a.widget .widget-image img.landscape {
 
 /******************************************************************/
 /******************************************************************/
+
+/* Debugging 
+* {
+  outline: red;
+  outline-width: thin;
+  outline-style: solid;
+}*/
