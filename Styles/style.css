@@ -7947,7 +7947,7 @@ h2.title-on-bottom {
 	position: absolute;
 	width: 100%;
 }
-@media (max-width: 1280px){
+@media (max-width: 1279px){
 	.feature-on-bottom-navbar {
 	  display: none;
 	}
@@ -7965,6 +7965,10 @@ h2.title-on-bottom {
 	padding-left: 0.618%;
 	padding-right: 0.618%;
 }
+.feature-on-bottom-nav li nav a {
+  padding: 20px 0px;
+	padding-right: 10px;
+}
 .feature-on-bottom-navbar:after {
   background: rgba(0, 0, 0, 0.48);
   bottom: 0;
@@ -7977,10 +7981,11 @@ h2.title-on-bottom {
 }
 .feature-on-bottom-nav li a:hover {
 	background: none;
+	cursor: pointer;
 }
 .campus-button-directions{
   text-align: center;
-  bottom: -150px;
+  bottom: -100px;
   display: block;
   margin: auto !important;
   position: relative;
@@ -7992,7 +7997,8 @@ h2.title-on-bottom {
   display: block;
 }
 .campus-connection-row{
-  height: 350px;
+  min-height: 400px;
+	display: block;
 }
 .campus-bg-img{
   height: 700px;
