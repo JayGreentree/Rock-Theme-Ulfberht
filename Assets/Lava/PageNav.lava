@@ -6,11 +6,21 @@
 				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a> 
 				
 				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
-					<ul class="hoverDown">
-					{% for subchildPage in childPage.Pages %}
-						<li><a id="headSubNav" href="{{ subchildPage.Url }}">{{ subchildPage.Title }}</a></li> 
-					{% endfor %}
-					</ul>
+					<div class="hoverDown">
+						<ul>
+						{% for subchildPage in childPage.Pages %}
+							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa fa-chevron-down fa-rotate-90"></i>{% endif %}</a>
+								{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}
+									<ul class="subBlock">
+									{% for subsubchildPage in subchildPage.Pages %}
+										<li><a href="{{ subsubchildPage.Url }}">{{ subsubchildPage.Title }}</a></li> 
+									{% endfor %}
+									</ul>
+								{% endif %}
+							</li> 
+						{% endfor %}
+						</ul>
+					</div>
 				{% endif %}
             </li>
         {% endfor %}
