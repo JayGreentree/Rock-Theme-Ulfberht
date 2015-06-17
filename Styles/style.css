@@ -6408,7 +6408,7 @@ a.navbar-brand:active {
     	border-color: #edb76f;
 	}
 	#search:hover .searchBar{
-		display: block !important;
+		visibility: visible;
 		opacity: 1;
 	}
 }
@@ -6421,14 +6421,10 @@ a.navbar-brand:active {
     margin-right: 10px;
     padding-left: 0;
   }
-	.hoverdown{
-		-webkit-transition: width 2s;
-    	transition: width 2s;
-	}
-	.navbar-main li:hover .hoverDown{
+	.navbar-main li:hover div.hoverDown{
 		display: block;
 		opacity: 1;
-		background-color: #333332;
+		background-color: rgba(51,51,50,.97);
 		position: fixed;
 		z-index: 9001;
 		padding-bottom: 10px;
@@ -6442,10 +6438,65 @@ a.navbar-brand:active {
 		margin-bottom: 0px;
 		min-width: 158px
 	}
-	ul.hoverDown li a{
-		padding: 8px 5px;
-		margin: 20px 5px;
+	.hoverDown ul{
+		list-style-type: none;
+		list-style-position: inside;
+		list-style: none;
+		padding: 0;
 	}
+	div.hoverDown ul li a{
+		padding: 0px 0px;
+		margin: 10px 10px;
+		line-height: 2em;
+	}
+	/*.headSubNav{
+		border-bottom: 1px solid #707372;
+		border-bottom-width: 100%;
+		margin-bottom: 3px;
+	}
+	.headSubNav::after{
+		content: "<i class=\"fa fa-angle-double-down\"></i>";
+	}*/
+	li i.fa-chevron-down{
+		color: #fff;
+		padding: 0;
+		margin: 0px 5px;
+	}
+	.subBlock{
+		height: 0;
+		visibility: hidden;
+		opacity: 0;
+		margin: 0px;
+		list-style-type: none;
+		list-style-position: inside;
+		list-style: none;
+		padding: 0px 16.18px;
+		background: rgba(112,115,114,0.618);
+		transition: all 618ms ease-out;
+		-webkit-transition: all 618ms ease-out; /* Safari */
+		transition-delay: 25s;
+		-webkit-transition-delay: 25s;
+		border-top: 1px solid #000;
+		border-bottom: 1px solid #000;
+	}
+	.subBlock li{
+		padding-left: 8px;	
+	}
+	.hoverDown li:hover .subBlock{
+		height: 100%;
+		visibility: visible;
+		opacity: 1;
+		margin: 5px 0px;
+		transition: all 618ms ease-in;
+		-webkit-transition: all 618ms ease-out; /* Safari */
+				transition-delay: 180ms;
+		-webkit-transition-delay: 180ms;
+
+	}
+	/*.hoverDown li:hover li i.fa-chevron-down{
+		transition: 618ms;
+    	transform: rotate(-90deg);
+	}*/
 	ul.hoverDown li a:hover{
 		text-decoration: none;
 		color: #76908b !important;
@@ -6460,10 +6511,38 @@ a.navbar-brand:active {
   float: right;
   height: 100%;
   padding-left: 10px;
-  width: 50%;
+	padding-right: 80px;
+  width: auto;
 }
 .navbar-secondary li a {
   color: #ffffff !important;
+}
+@media (max-width: 767px) {
+	.navbar-main{
+		position: relative;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+	.navbar-secondary {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	  background: #333332;
+	  float: left;
+	  width: 100%;
+		margin: 0;
+		padding: 0;
+		border-top-style: solid;
+		border-top-color: #707372;
+		border-top-width: 1px;
+		border-bottom-style: solid;
+		border-bottom-color: #000;
+		border-bottom-width: 2px;
+	}
+	.navbar-secondary li a{
+		padding: 10px 20px;
+	}
 }
 @media (min-width: 1280px) {
   .navbar-secondary {
@@ -7737,7 +7816,7 @@ h2.title-on-bottom {
 	width: 25%;
 	height: 60px;
 	padding-left: 6.18px;
-	display: none;
+	visibility: hidden;
 	position: fixed;
 	right: 0px; 
 	top: 60px; 
@@ -7746,13 +7825,24 @@ h2.title-on-bottom {
 	border-style: solid;
 	border-width: 15px;
 	border-color: #707273 !important;	
+	opacity: 0;
+	transition: all 618ms ease-out;
 }
 
 /******* Nav HoverDown ********/
 .hoverDown{
 	background-color: #efefef;
-	color: 333332;
+	color: #333332;
 	display: none;
+	position: relative;
+	z-index: 9001;
+	border-bottom-right-radius:3px;
+	border-bottom-left-radius:3px;
+}
+ul.nav.navbar-nav>li>a:hover ul.hoverDown{
+	background-color: #000;
+	color: #333332;
+	display: block;
 	position: relative;
 	z-index: 9001;	
 }
