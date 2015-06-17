@@ -107,7 +107,7 @@ function randoBack()
 	var ran_num = Math.floor(Math.random()*(my_imgs.length));
 	
 	// set image attributes
-	$("#section-feature").css("background-image" , "url(Themes/Ulfberht/img/image-" + my_imgs[ran_num] + ".jpg)");
+	$("#section-feature").css("background-image" , "url(/Themes/Ulfberht/img/image-" + my_imgs[ran_num] + ".jpg)");
 	
 	//set focus
 	var Fvalues = String(my_imgs_focus[ran_num]);
