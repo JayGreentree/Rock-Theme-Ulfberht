@@ -28,7 +28,7 @@
 <asp:Content ID="ctMain" ContentPlaceHolderID="main" runat="server">
 	<main>
         <!-- Start Content Area -->
-        <div class="container hidden-xs">
+        <div class="container">
         <!-- Ajax Error -->
         <div class="alert alert-danger ajax-error" style="display:none">
             <p><strong>Error</strong></p>
