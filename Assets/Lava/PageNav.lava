@@ -2,14 +2,14 @@
     <ul class="nav navbar-nav">
 
 		{% for childPage in Page.Pages %}
-            <li {% if childPage.Current == 'true' %} class="active"{% endif%}>
-				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a> 
+            <li class="mobileheaders"{% if childPage.Current == 'true' %} class="active mobileheaders"{% endif%}>
+				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}<a id="MN-{{ forloop.index }}" class="mobileNav">more<i id="fa-{{ forloop.index }}" class="fa-nav fa fa-chevron-circle-down fa-lg mobileNav"></i></a>{% endif %}
 				
 				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
-					<div class="hoverDown">
+					<div id="MB-{{ forloop.index }}" class="hoverDown">
 						<ul>
 						{% for subchildPage in childPage.Pages %}
-							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa fa-chevron-down fa-rotate-90"></i>{% endif %}</a>
+							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa-nav fa fa-chevron-circle-down fa-lg"></i>{% endif %}</a>
 								{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}
 									<ul class="subBlock">
 									{% for subsubchildPage in subchildPage.Pages %}
