@@ -6414,6 +6414,7 @@ a.navbar-brand:active {
 	}
 }
 .navbar-main {
+	min-width: 60%;
   float: left;
   padding-left: 10px;
 }
@@ -6445,6 +6446,12 @@ a.mobileNav{
 	border-bottom-color: #707372;
 	border-bottom-width: 1px;
 }
+@media (min-width: 850px){
+	.mobileheaders{
+		margin: 5px 0px;
+		border: none;
+	}	
+}
 .hoverDown ul{
 	list-style-type: none;
 	list-style-position: inside;
@@ -6459,7 +6466,7 @@ div.hoverDown ul li a{
 	width: inherit;
 }
 .subBlock{
-	display: none;
+	visibility: collapse;
 }
 @media (min-width: 1280px) {
 	.mobileNav{
@@ -6478,7 +6485,7 @@ div.hoverDown ul li a{
 		opacity: 1;
 		background-color: rgba(51,51,50,.97);
 		position: fixed;
-		z-index: 9001;
+		z-index: 2001;
 		padding-bottom: 10px;
 		padding-top: 5px;
 		list-style-type: none;
@@ -6579,7 +6586,7 @@ div.hoverDown ul li a{
 .navbar-secondary li a {
   color: #ffffff !important;
 }
-@media (max-width: 767px) {
+@media (max-width: 849px) {
 	.navbar-main{
 		position: relative;
 		width: 100%;
@@ -6673,11 +6680,6 @@ footer.site-footer ul li a:focus {
 }
 footer.site-footer ul li:first-of-type {
   margin-bottom: 10px;
-}
-footer.site-footer ul li:first-of-type a {
-  color: #ffffff;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 footer.site-footer ul li:first-of-type a:hover,
 footer.site-footer ul li:first-of-type a:focus {
@@ -7872,7 +7874,7 @@ h2.title-on-bottom {
 }
 
 /******* Search Bar ********/
-.searchBar{
+.searchBarMbl{
 	background-color: #efefef;
 	color: 333332;
 	width: 100%;
@@ -7882,14 +7884,16 @@ h2.title-on-bottom {
 	position: fixed;
 	right: 0px; 
 	top: 60px; 
-	z-index: 9001;
+	z-index: 2001;
 	border: #000000;
 	border-style: solid;
 	border-width: 15px;
-	border-color: #707273 !important;	
-	transition: all 618ms ease-out;
+	border-color: #707273 !important;
 }
-@media (min-width: 1280){
+.searchBar{
+	display: none;
+}
+@media (min-width: 1280px){
 	.searchBar{
 		background-color: #efefef;
 		color: 333332;
@@ -7897,10 +7901,11 @@ h2.title-on-bottom {
 		height: 60px;
 		padding-left: 6.18px;
 		visibility: hidden;
+		display: block !important;
 		position: fixed;
 		right: 0px; 
 		top: 60px; 
-		z-index: 9001;
+		z-index: 2001;
 		border: #000000;
 		border-style: solid;
 		border-width: 15px;
@@ -7916,7 +7921,7 @@ h2.title-on-bottom {
 	color: #333332;
 	display: none;
 	position: relative;
-	z-index: 9001;
+	z-index: 2001;
 	border-bottom-right-radius:3px;
 	border-bottom-left-radius:3px;
 }
@@ -7925,7 +7930,7 @@ ul.nav.navbar-nav>li>a:hover ul.hoverDown{
 	color: #333332;
 	display: block;
 	position: relative;
-	z-index: 9001;	
+	z-index: 2001;	
 }
 /******* feature class for ministry pages ********/
 .feature{
@@ -8016,7 +8021,7 @@ ul.nav.navbar-nav>li>a:hover ul.hoverDown{
 	position: fixed; 
 	left: 15px; 
 	top: 15px; 
-	z-index: 9001;
+	z-index: 2001;
 }
 .Central-logo:hover path{
 	fill: #9fbb99;
@@ -8026,14 +8031,14 @@ ul.nav.navbar-nav>li>a:hover ul.hoverDown{
 		position: fixed; 
 		left: 50%;
 		top: 15px; 
-		z-index: 9001;
+		z-index: 2001;
 		margin-left: -945px;
 	}
 	.searchBar{
 		position: fixed;
 		right: 50%;
 		top: 60px;
-		z-index: 9001;
+		z-index: 2001;
 		margin-right: -960px;
 	}
 }
@@ -8293,6 +8298,47 @@ a.widget .widget-image img.landscape {
 		left: -55% !important;
 	}
 }
+
+.csm-penguin{
+	background: url(../img/PENGUIN.png) no-repeat;
+	background-size: 200px;
+	height: 200px;
+	width: 200px;
+	margin: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	position: relative;
+}
+.grow-block:hover *{
+	transform: scale(1.1);
+	cursor: auto;
+	z-index: 2001;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+.grow-block:hover .csm-penguin{
+	transform: scale(1.1) rotate(8.09deg);
+}
+.grow-block *{
+	-webkit-transition: all 0.2s ease-in-out;
+ 	-o-transition: all 0.2s ease-in-out;
+ 	transition: all 0.2s ease-in-out;
+}
+.grey-filter:before {
+  background: rgba(0, 0, 0, 0.4);
+}
+.bg-childrens-block{
+	background: url(../img/image-040.jpg) no-repeat;
+	background-size: cover;
+}
+
+.footer-header{
+	color: #ffffff;
+	font-weight: 600;
+	text-transform: uppercase;
+}
 /******************************************************************/
 /******************************************************************/
 
@@ -8301,4 +8347,4 @@ a.widget .widget-image img.landscape {
   outline: red;
   outline-width: thin;
   outline-style: solid;
-}*/
+}/**/
