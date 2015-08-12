@@ -1,19 +1,36 @@
 {% if Page.DisplayChildPages == 'true' and Page.Pages != empty %}
-    <ul class="nav navbar-nav">
+    <ul id="mobileMenu">
+		{% for childPage in Page.Pages %}
+            <li>{{childPage.Title}}								
+				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
+						<ul>
+							<li><a href="{{ childPage.Url }}">{{ childPage.Title }}<span class="mobile-help"> (page link)</span></a></li>
+						{% for subchildPage in childPage.Pages %}
+							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}</a></li> 
+						{% endfor %}
+						</ul>
+				{% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if Page.DisplayChildPages == 'true' and Page.Pages != empty %}
+    <ul id="Desktopnav" class="nav navbar-nav">
 
 		{% for childPage in Page.Pages %}
-            <li class="mobileheaders"{% if childPage.Current == 'true' %} class="active mobileheaders"{% endif%}>
-				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}<a id="MN-{{ forloop.index }}" class="mobileNav">more<i id="fa-{{ forloop.index }}" class="fa-nav fa fa-chevron-circle-down fa-lg mobileNav"></i></a>{% endif %}
-				
+            <li>
+				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>				
 				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
-					<div id="MB-{{ forloop.index }}" class="hoverDown">
+					<div class="hoverDown">
 						<ul>
 						{% for subchildPage in childPage.Pages %}
-							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa-nav fa fa-chevron-circle-down fa-lg"></i>{% endif %}</a>
+							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa-nav fa fa-chevron-down fa-lg"></i>{% endif %}</a>
 								{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}
 									<ul class="subBlock">
 									{% for subsubchildPage in subchildPage.Pages %}
-										<li><a href="{{ subsubchildPage.Url }}">{{ subsubchildPage.Title }}</a></li> 
+										<li><a href="{{ subsubchildPage.Url }}">{{ subsubchildPage.Title }}</a>
+										</li> 
 									{% endfor %}
 									</ul>
 								{% endif %}

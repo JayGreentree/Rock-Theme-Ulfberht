@@ -6468,7 +6468,13 @@ div.hoverDown ul li a{
 .subBlock{
 	visibility: collapse;
 }
+#Desktopnav{
+	display: none;
+}
 @media (min-width: 1280px) {
+	#Desktopnav{
+		display: block;	
+	}
 	.mobileNav{
 		display: none !important;	
 	}
@@ -6508,15 +6514,17 @@ div.hoverDown ul li a{
 		margin: 10px 10px;
 		line-height: 2.3em;
 	}
-	li i.fa-chevron-circle-down{
+	li i.fa-chevron-down{
 		color: #fff;
 		padding: 2px;
 		margin: 0px 5px;
 		margin-top: 2px;
-		-webkit-transform: rotate(90deg);
-		-moz-transform: rotate(90deg);
-		-o-transform: rotate(90deg);
-		transform: rotate(90deg);
+		position: relative;
+		top: 2px;
+		-webkit-transform: scale(0.8) rotate(-90deg);
+		-moz-transform: scale(0.8) rotate(-90deg);
+		-o-transform: scale(0.8) rotate(-90deg);
+		transform: scale(0.8) rotate(-90deg);
 		transition-delay: 25s;
 		-o-transition-delay: 25s;
 		-moz-transition-delay: 25s;
@@ -6560,7 +6568,7 @@ div.hoverDown ul li a{
 		-moz-transition-delay: 180ms;
 		-webkit-transition-delay: 180ms;
 	}
-	.hoverDown li a:hover .fa-chevron-circle-down{
+	.hoverDown li a:hover .fa-chevron-down{
 	    -webkit-transform: rotate(0deg);
 		-moz-transform: rotate(0deg);
 		-o-transform: rotate(0deg);
@@ -8302,6 +8310,17 @@ a.widget .widget-image img.landscape {
 .csm-penguin{
 	background: url(../img/PENGUIN.png) no-repeat;
 	background-size: 200px;
+	height: 200px;
+	width: 200px;
+	margin: 3px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 15px;
+	position: relative;
+}
+.child-boot{
+	background: url(../img/Boots.png) no-repeat;
+	background-size: 150px;
 	height: 200px;
 	width: 200px;
 	margin: 3px;

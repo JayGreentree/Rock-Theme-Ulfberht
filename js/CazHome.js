@@ -30,24 +30,27 @@ function WhatsHap()
 		imgID = imgID.concat(counter);
 		
 		img = document.getElementById(imgID); 
-		width = img.clientWidth;
-		height = img.clientHeight;
-		ratio = width / height;
-		
-		//window.alert("Diagnostics Data: " + width + "\nheight: " + height);
+		if( img )
+		{
+			width = img.clientWidth;
+			height = img.clientHeight;
+			ratio = width / height;
+			
+			//window.alert("Diagnostics Data: " + width + "\nheight: " + height);
 
-		// landscape image
-		if(ratio > 1)
-		{
-			document.getElementById(imgID).className = "landscape";
-		}
-		else if (ratio < 1) // square or portrait image
-		{
-			document.getElementById(imgID).className = "portrait";
-		}
-		else
-		{
-			document.getElementById(imgID).className = "square";
+			// landscape image
+			if(ratio > 1)
+			{
+				document.getElementById(imgID).className = "landscape";
+			}
+			else if (ratio < 1) // square or portrait image
+			{
+				document.getElementById(imgID).className = "portrait";
+			}
+			else
+			{
+				document.getElementById(imgID).className = "square";
+			}
 		}
 	}
 }
@@ -67,24 +70,44 @@ function randoBack()
 	my_imgs[3] = "005";
 	my_imgs[4] = "007";
 	my_imgs[5] = "008";
-	
+	my_imgs[6] = "017";
+	my_imgs[7] = "018";
+	my_imgs[8] = "020";
+	my_imgs[9] = "021";
+	my_imgs[10] = "022";
+	my_imgs[11] = "023";
+	my_imgs[12] = "025";
+	my_imgs[13] = "026";
+	my_imgs[14] = "027";
+	my_imgs[15] = "028";
+	my_imgs[16] = "029";
+	my_imgs[17] = "030";
+	my_imgs[18] = "031";
+	my_imgs[19] = "032";
+	my_imgs[20] = "033";
+	my_imgs[21] = "034";
+	my_imgs[22] = "035";
+	my_imgs[23] = "036";
+
+	/* no longer used as it caused too much trouble to prune and renew images
 	// for 6-31 increment/set starting at 17	
 	for( var i = 6; i <= 25; i++)
 	{
 		my_imgs[i] = "0" + (i + 11);
 	}
-
+	*/
 
 	/* focal points, hand picked and coded */
 	my_imgs_focus[0] = 7820; 
 	my_imgs_focus[1] = 7550;
 	my_imgs_focus[2] = 6560;
 	my_imgs_focus[3] = 5030;
+	//checkpoint
 	my_imgs_focus[4] = 5087;
 	my_imgs_focus[5] = 7080;
 	my_imgs_focus[6] = 5075;
 	my_imgs_focus[7] = 5250;
-	my_imgs_focus[8] = 4550;
+
 	my_imgs_focus[9] = 1830;
 	my_imgs_focus[10] = 4060; 
 	my_imgs_focus[11] = 3550;

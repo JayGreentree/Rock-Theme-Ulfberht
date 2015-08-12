@@ -24,7 +24,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
-    <title></title>
+
+	
 	
 	<script src="<%# ResolveRockUrl("~/Scripts/jquery-1.10.2.min.js", false) %>"></script>
 
@@ -45,8 +46,14 @@
 	<script>try{Typekit.load();}catch(e){}</script> -->
     <script src="<%# ResolveRockUrl("~/Scripts/modernizr.js", false) %>" ></script>
 	<script src="<%# ResolveRockUrl("~~/assets/js/jquery.fitvids.js", false) %>"></script>
-	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", true) %>"></script>
+	<script src="<%# ResolveRockUrl("~~/js/CazHome.js", false) %>"></script>
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	
+	<!-- Slicknav stuff -->
+<!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+	<link rel="stylesheet" href="<%# ResolveRockUrl("~~/Styles/slicknav.css", true) %>"/>
+	<script src="<%# ResolveRockUrl("~~/js/jquery.slicknav.js", true) %>"></script>
+
 	
 <!--[if lt IE 9]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -66,142 +73,39 @@
 <body>
 
     <form id="form1" runat="server">
-		<script> /* mobile Nav Jquery*/
-		$(document).ready(function() {	
-		$('#MN-1').click(function() {
-			$('#MB-1').slideToggle("medium");
-			$('#fa-1').css({
-				'-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-2').click(function() {
-			$('#MB-2').slideToggle("medium");
-			$('#fa-2').css({
-				 '-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-3').click(function() {
-			$('#MB-3').slideToggle("medium");
-			$('#fa-3').css({
-				'-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-4').click(function() {
-			$('#MB-4').slideToggle("medium");
-			$('#fa-4').css({
-				 '-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-5').click(function() {
-			$('#MB-5').slideToggle("medium");
-			$('#fa-5').css({
-				 '-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-6').click(function() {
-			$('#MB-6').slideToggle("medium");
-			$('#fa-6').css({
-				 '-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#MN-7').click(function() {
-			$('#MB-7').slideToggle("medium");
-			$('#fa-7').css({
-				 '-moz-transform':'rotate(0deg)',
-				'-webkit-transform':'rotate(0deg)',
-				'-o-transform':'rotate(0deg)',
-				'-ms-transform':'rotate(0deg)',
-				'transform':'rotate(0deg)',
-				'transition': 'all 618ms ease-out',
-				'-moz-transition': 'all 618ms ease-out',
-				'-o-transition': 'all 618ms ease-out',
-				'-webkit-transition': 'all 618ms ease-out'
-			});
-		});
-		$('#search').click(function() {
-			if ($(window).width() <= 1280){
-			$('#searchBar').toggle("medium");
-			}
-		});
-		});
-		</script>
         <!-- Page Header -->
         <header>
         
             <!-- Brand Bar -->
             <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container-fluid">					
-					<div class="navbar-header">
+					<!--<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<!-- <a class="navbar-brand" href="#"></a> -->
-					</div>
+						 <a class="navbar-brand" href="#"></a> 
+					</div>-->
 					
 					<div class="Central-logo">
 						<a alt="Home" href="/"><img src="//cdn.brandisty.com/img?id=543855028049b5681400026e&format=png&w=600&h=372" onerror="this.onerror=null; this.src='error.png'" style="height:30px;"></a>
 							
 						</div>
+						<div id="mobileMenuTarget"></div>
 			       	
-                    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">   			
+<!--		removing navbarcollapse
+                    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1">   						       	
+-->
+                    <div class="navbar-collapse collapse">   			
 						
                         <!-- Main Navigation -->
                         <div class="ul-container">
 							
-							<ul class="nav navbar-nav navbar-main">
+							<div class="nav navbar-nav navbar-main">
 								<Rock:Zone Name="Navigation" runat="server" />			
-							</ul>
+							</div>
 							<ul class="nav navbar-nav navbar-secondary">
 								<!-- custom block here <Rock:Zone Name="Login" runat="server" /> -->
 								<li><a href="#">Hello KryztoffersonFillerName</a></li>
@@ -286,6 +190,20 @@
 			<div class="footer-location"><span class="az-icon"></span>Phoenix, AZ</div>
 		</div>
 	    </footer>
+		<script> /* mobile Nav Jquery*/
+			$(document).ready(function(){
+				$('#mobileMenu').slicknav({
+					label: '',
+					prependTo:'#mobileMenuTarget',
+					duplicate: false
+					});
+			});
+			$('#search').click(function() {
+				if ($(window).width() <= 1280){
+				$('#searchBar').toggle("medium");
+				}
+			});
+		</script>
         
 		<%-- controls for scriptmanager and update panel --%>
         <asp:ScriptManager ID="sManager" runat="server"/>
@@ -304,7 +222,6 @@
 		        </ProgressTemplate>
         </asp:UpdateProgress>
     </form>
-
 </body>
 
 </html>

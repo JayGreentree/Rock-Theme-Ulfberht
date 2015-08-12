@@ -29,10 +29,12 @@ function WhatsHap()
 		imgID = imgID.slice(0,3);
 		imgID = imgID.concat(counter);
 		
+		if( imgID ){
 		img = document.getElementById(imgID); 
 		width = img.clientWidth;
 		height = img.clientHeight;
 		ratio = width / height;
+		}
 		
 		//window.alert("Diagnostics Data: " + width + "\nheight: " + height);
 
