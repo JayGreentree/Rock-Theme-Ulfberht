@@ -181,11 +181,11 @@
 			
 		<div class="col-xs-12 col-md-2">
 			<nav class="social-nav">
-				<Rock:Zone Name="Footer5" runat="server" />
-				<a href="#" class="social-facebook">Facebook</a>
-				<a href="#" class="social-twitter">Twitter</a>
-				<a href="#" class="social-instagram">Instagram</a>
-				<a href="#" class="social-vimeo">Vimeo</a>
+				<a href="https://www.facebook.com/CentralAZ" class="social-facebook"></a>
+				<a href="https://twitter.com/centralaz" class="social-twitter"></a>
+				<a href="https://instagram.com/centralchristianaz/" class="social-instagram"></a>
+				<a href="http://media.centralaz.com/"><i class="fa fa-film social-video"></i></a>
+				<a href="http://blog.centralaz.com/"><i class="fa fa-comments social-video"></i></a>
 			</nav>
 			<div class="footer-location"><span class="az-icon"></span>Phoenix, AZ</div>
 		</div>
@@ -194,6 +194,7 @@
 			$(document).ready(function(){
 				$('#mobileMenu').slicknav({
 					label: '',
+					duration: 515,
 					prependTo:'#mobileMenuTarget',
 					duplicate: false
 					});
