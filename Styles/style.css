@@ -6370,18 +6370,18 @@ a.navbar-brand:active {
   }
 }
 #search {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #000000;
-  border: 1px solid #777777;
-  height: 34px;
-  padding-top: 5px;
-  position: absolute;
-  right: 64px;
-  text-align: center;
-  top: 12px;
-  width: 44px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	background: #000000;
+	border: 1px solid #777777;
+	height: 34px;
+	padding-top: 5px;
+	position: absolute;
+	right: 64px;
+	text-align: center;
+	top: 12px;
+	width: 44px;
 	z-index: 300;
 }
 #search span {
@@ -6732,6 +6732,23 @@ footer.site-footer ul li:first-of-type a:focus {
 }
 .social-nav a.social-vimeo:before {
   content: "\e009";
+}
+.social-video:hover{
+	color: #fff;
+}
+.social-video{
+    color: #9fbb99;
+    font-size: 17.8px !important;
+    position: absolute;
+    bottom: 17px;
+	padding-left: 5px;
+}
+.social-video-campus-page{
+    color: #9fbb99;
+    font-size: 17.8px !important;
+    position: absolute;
+    bottom: 12px;
+	padding-left: 5px;
 }
 .footer-location {
   color: #ffffff;
@@ -7869,6 +7886,14 @@ h2.title-on-bottom {
 /********************* Begin Custom Rock CSS **********************/
 /******************************************************************/
 
+.center-parent{
+	width: 100%;
+	margin: auto;
+}
+.center-child{
+	display: block;
+	margin: 0 auto !important;
+}
 
 /******* Added Images for BG callouts ********/
 
@@ -7920,6 +7945,8 @@ h2.title-on-bottom {
 		border-color: #707273 !important;	
 		opacity: 0;
 		transition: all 618ms ease-out;
+		    -webkit-transition-delay: 300ms; /* Safari */
+	transition-delay: 300ms;
 	}
 }
 
@@ -8206,6 +8233,90 @@ ul.nav.navbar-nav>li>a:hover ul.hoverDown{
 }
 
 /******* Directions page classes ********/
+ul.secondrow{
+	position: relative;
+	top: -65px;
+}
+
+@media (max-width: 767px){
+	.mobile{
+		display: block;	
+	}
+	.desktop{
+		display: none;
+	}
+}@media (min-width: 768px){
+	.mobile{
+		display: none;	
+	}
+	.desktop{
+		display: block;
+	}
+}
+.campustag{
+	min-width: 150px;
+	min-height: 150px;
+	z-index: 300;
+}
+.campustag:hover{
+	cursor: pointer;
+	border-style: none;
+}
+.Directions-anchor-nav{
+	position: absolute;
+	top: 98px;
+	visibility: hidden;
+	left: 16.18%;
+}
+#directionstab{
+	position: absolute;
+}
+.badge-spacing{
+	padding: 0px 5px;
+}
+@media (max-width: 1280px) and (min-width: 1100px){
+	.campustag{
+		-ms-transform: scale(0.8,0.8); /* IE 9 */
+		-webkit-transform: scale(0.8,0.8); /* Safari */
+   		transform: scale(0.8,0.8); /* Standard syntax */
+	}
+	li.Directions-nav{
+		width: 125px;	
+	}
+	ul.secondrow-nav{
+		position: relative;
+		top: -145px !important;
+	}
+	.Direcitons-nav{
+		-ms-transform: scale(0.8,0.8); /* IE 9 */
+		-webkit-transform: scale(0.8,0.8); /* Safari */
+   		transform: scale(0.8,0.8); /* Standard syntax */
+		border-bottom-style: none !important;
+	}
+}
+@media (max-width: 1099px){
+	.campustag{
+		-ms-transform: scale(0.5,0.5); /* IE 9 */
+		-webkit-transform: scale(0.5,0.5); /* Safari */
+   		transform: scale(0.5,0.5); /* Standard syntax */
+	}
+	li.Directions-nav{
+		width: 80px;	
+	}
+	ul.secondrow-nav{
+		position: relative;
+		top: -185px !important;
+	}
+	ul.Directions-nav{
+		position: relative;
+		right: 35px;
+		border-bottom-style: none !important;
+	}
+}
+.Directions-nav{
+		border-bottom-style: none !important;
+}
+
 h3.Directions{
 	margin-bottom: 16.18px;
 }
@@ -8246,6 +8357,9 @@ li.Directions:hover{
    border-radius: 50px;
 	cursor: pointer;
 }
+a.campustag:hover{
+	background-color: none;
+}
 @media (min-width: 1280px){
 	div.Directions{
 		display: table !important;
@@ -8269,6 +8383,7 @@ ul.direction-buttons{
 	list-style-type: none;
 	width: 100%;
 	height: 600px;
+	padding: 0;
 }
 ul.direction-buttons li button.button{
   text-align: center;
