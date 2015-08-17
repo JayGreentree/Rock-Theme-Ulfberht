@@ -46,10 +46,15 @@
     content: " ";
     display: table;
     clear: both; }
-
-@media (min-width: 1280px){
+#mobileMenuTarget{
+	display: none;	
+}
+#mobileMenu{
+	display: none;	
+}
+@media (max-width: 1279px){
 	#mobileMenuTarget{
-		display: none;	
+		display: block;	
 	}
 }
 
