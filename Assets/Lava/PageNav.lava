@@ -1,9 +1,9 @@
 {% if Page.DisplayChildPages == 'true' and Page.Pages != empty %}
     <ul id="mobileMenu">
 		{% for childPage in Page.Pages %}
-            <li>{% if childPage.Pages == null %}<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>{% endif %}
-			{% if childPage.Pages != null %}{{ childPage.Title }}{% endif %}
-				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
+            <li>{% if childPage.Pages == empty %}<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>{% endif %}
+			{% if childPage.Pages != empty %}{{ childPage.Title }}{% endif %}
+				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != empty %}
 						<ul>
 							<li><a href="{{ childPage.Url }}">{{ childPage.Title }}<span class="mobile-help"> (page link)</span></a></li>
 						{% for subchildPage in childPage.Pages %}
@@ -22,12 +22,12 @@
 		{% for childPage in Page.Pages %}
             <li>
 				<a href="{{ childPage.Url }}">{{ childPage.Title }}</a>				
-				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != null %}
+				{% if childPage.DisplayChildPages == 'true' and childPage.Pages != empty %}
 					<div class="hoverDown">
 						<ul>
 						{% for subchildPage in childPage.Pages %}
-							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}<i class="fa-nav fa fa-chevron-down fa-lg"></i>{% endif %}</a>
-								{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != null %}
+							<li><a href="{{ subchildPage.Url }} ">{{ subchildPage.Title }}{% if subchildPage.Pages != empty and subchildPage.DisplayChildPages == 'true' %}<i class="fa-nav fa fa-chevron-down fa-lg"></i>{% endif %}</a>
+								{% if subchildPage.DisplayChildPages == 'true' and subchildPage.Pages != empty %}
 									<ul class="subBlock">
 									{% for subsubchildPage in subchildPage.Pages %}
 										<li><a href="{{ subsubchildPage.Url }}">{{ subsubchildPage.Title }}</a>
