@@ -102,29 +102,25 @@ function randoBack()
 	my_imgs_focus[1] = 7550;
 	my_imgs_focus[2] = 6560;
 	my_imgs_focus[3] = 5030;
-	//checkpoint
 	my_imgs_focus[4] = 5087;
-	my_imgs_focus[5] = 7080;
-	my_imgs_focus[6] = 5075;
+	my_imgs_focus[5] = 2580;
+	my_imgs_focus[6] = 4575;
 	my_imgs_focus[7] = 5250;
-
-	my_imgs_focus[9] = 1830;
-	my_imgs_focus[10] = 4060; 
-	my_imgs_focus[11] = 3550;
-	my_imgs_focus[12] = 2545;
-	my_imgs_focus[13] = 7140;
-	my_imgs_focus[14] = 8010;
-	my_imgs_focus[15] = 3050;
-	my_imgs_focus[16] = 6360;
-	my_imgs_focus[17] = 5580;
-	my_imgs_focus[18] = 1870;
-	my_imgs_focus[19] = 4040;
-	my_imgs_focus[20] = 3565; 
-	my_imgs_focus[21] = 7940;
-	my_imgs_focus[22] = 4030;
-	my_imgs_focus[23] = 1480;
-	my_imgs_focus[24] = 5535;
-	my_imgs_focus[25] = 1060;
+	my_imgs_focus[9] = 2030;
+	my_imgs_focus[10] = 4060;
+	my_imgs_focus[11] = 3050;
+	my_imgs_focus[12] = 7510;
+	my_imgs_focus[13] = 2250;
+	my_imgs_focus[14] = 5970;
+	my_imgs_focus[15] = 5680;
+	my_imgs_focus[16] = 1080;
+	my_imgs_focus[17] = 1063;
+	my_imgs_focus[18] = 4715;
+	my_imgs_focus[19] = 7940;
+	my_imgs_focus[20] = 4030; 
+	my_imgs_focus[21] = 1080;
+	my_imgs_focus[22] = 5535;
+	my_imgs_focus[23] = 1060;
 	
 	// seed random numb gen, time?
 	var ran_num = Math.floor(Math.random()*(my_imgs.length));
