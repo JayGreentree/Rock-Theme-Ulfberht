@@ -7886,6 +7886,13 @@ h2.title-on-bottom {
 /**************************** Begin Custom Rock CSS *****************************/
 /********************************************************************************/
 
+/***** set bootstrap panels to have proper backdrop *****/
+.panel-block{
+	background: url(../img/bg-pattern.png) repeat;
+    background-size: 100px;
+    font-family: 'Gotham SSm A', 'Gotham SSm B', 'Open Sans';	
+}
+
 /***** set min height for all content/feature containers on pages *****/
 main.container{
 	min-height: 30em;
