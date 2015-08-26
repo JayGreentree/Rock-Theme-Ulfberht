@@ -107,10 +107,7 @@
 								<Rock:Zone Name="Navigation" runat="server" />			
 							</div>
 							<ul class="nav navbar-nav navbar-secondary">
-								<!-- custom block here <Rock:Zone Name="Login" runat="server" /> -->
-								<li><a href="#">Hello KryztoffersonFillerName</a></li>
-								<li><a href="/login">Log In</a></li>
-								<li><a href="#">Give</a></li>
+								<Rock:Zone Name="Login" runat="server" />
 							</ul>
 								
 						</div> 
