@@ -26,7 +26,7 @@
 		</div>
 	</section>
 	<section class="container-fluid">
-		<div class="col-xs-12 col-md-12 callout-full-width typ-white bg-image-009" style = "background-position: 50% 85%;">
+		<div class="col-xs-12 col-md-12 callout-full-width typ-white bg-image-009" style = "background-position: 50% 90%;">
 			<Rock:Zone Name="EFCA" runat="server" />
 		</div>
 	</section>
