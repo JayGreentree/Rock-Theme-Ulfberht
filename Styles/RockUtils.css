@@ -2176,7 +2176,17 @@ dl:not(.dl-horizontal) dd {
   margin-right: 6px;
   float: left;
 	border-color: #cccccc;
+	z-index: 2090;
 }
+/***** custom color for input focus on front-end block settings *****/
+.form-control-group .form-control:focus,
+.form-control-group .input-group:focus{
+	border-color: #76908b;
+  	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(118, 144, 139, 0.6);
+  	outline: 0 none;
+}
+
+/***** *****/
 .form-control-group > span {
   float: left;
   margin: 8px 6px 0 0;
