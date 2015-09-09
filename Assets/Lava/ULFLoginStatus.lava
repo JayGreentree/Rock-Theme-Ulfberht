@@ -20,3 +20,29 @@
 		<a href="http://rockweb.centralaz.com/#">Give</a>
 	</li>
 </ul>
+
+<ul id="mobileProfile">    
+	{% if LinkedPages.MyAccountPage != '' and CurrentPerson != null %}
+		<li class="mobileGrey">
+			Hello {{CurrentPerson.NickName}}
+			<ul>
+				<li>
+					<a href="{{ LinkedPages.MyAccountPage }}">{{CurrentPerson.NickName}}'s profile</a>
+				</li>
+				<li>
+					<a href="#" onclick="{{ '' | Postback:'UserLoginLogout' }}">Logout</a>
+				</li>
+				<li>
+					<a href="http://rockweb.centralaz.com/#">Give</a>
+				</li>
+			</ul>
+		</li>
+	{% else %}
+		<li  class="mobileGrey">
+			<a href="#" onclick="{{ '' | Postback:'UserLoginLogout' }}">Login</a>
+		</li>
+		<li  class="mobileGrey">
+			<a href="http://rockweb.centralaz.com/#">Give</a>
+		</li>
+	{% endif %}
+</ul>
