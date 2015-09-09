@@ -187,7 +187,13 @@
 			<div class="footer-location"><span class="az-icon"></span>Phoenix, AZ</div>
 		</div>
 	    </footer>
-		<script> /* mobile Nav Jquery*/
+		<script> 
+			$(document).ready(function(){
+				var $profile = $('#mobileProfile').children();
+				$('#mobileProfile').remove();
+				$( "#mobileMenu" ).prepend( $profile );
+			}); 
+			/* mobile Nav Jquery*/
 			$(document).ready(function(){
 				$('#mobileMenu').slicknav({
 					label: '',
