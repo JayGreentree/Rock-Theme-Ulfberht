@@ -49,7 +49,7 @@
 #mobileMenuTarget{
 	display: none;	
 }
-#mobileMenu{
+#mobileMenu, #mobileProfile{
 	display: none;	
 }
 @media (max-width: 1279px){
@@ -199,4 +199,11 @@
 
 .mobile-help{
 	color: #707372;
+}
+
+.mobileGrey{
+	background-color: #333332;
+}
+.mobileGrey a {
+	margin: 0px !important;
 }
