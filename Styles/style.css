@@ -6730,6 +6730,27 @@ footer.site-footer ul li:first-of-type a:focus {
 .social-nav a:focus:before {
   color: #ffffff;
 }
+.social-nav a.social-facebook:hover:before,
+.social-nav a.social-facebook:focus:before {
+  color: #3B5998;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+}
+.social-nav a.social-twitter:hover:before,
+.social-nav a.social-twitter:focus:before {
+  color: #4099FF;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+}
+.social-nav a.social-instagram:hover:before,
+.social-nav a.social-instagram:focus:before {
+  color: #3f729b;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+}
 .social-nav a.social-facebook:before {
   content: "\e006";
 }
@@ -6742,15 +6763,25 @@ footer.site-footer ul li:first-of-type a:focus {
 .social-nav a.social-vimeo:before {
   content: "\e009";
 }
-.social-video:hover{
+/*.social-video:hover{
 	color: #fff;
-}
+}*/
 .social-video{
     color: #9fbb99;
     font-size: 17.8px !important;
     position: absolute;
     bottom: 17px;
 	padding-left: 5px;
+}
+.social-video:focus,
+.social-video:hover,
+.social-video-campus-page:hover,
+.social-video-campus-page:focus{
+    color: #76908b;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+	
 }
 .social-video-campus-page{
     color: #9fbb99;
@@ -6942,6 +6973,9 @@ button.button:focus {
   background: #ffffff;
   color: #000000;
   text-decoration: none;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
 }
 .container,
 h2.title-on-bottom {
@@ -8423,6 +8457,9 @@ li.Directions:hover{
    -webkit-border-radius: 50px; 
    border-radius: 50px;
 	cursor: pointer;
+	-webkit-transition: background 539ms ease-in-out;
+	-o-transition: background 539ms ease-in-out;
+	transition: background 539ms ease-in-out;
 }
 a.campustag:hover{
 	background: none !important;
@@ -8511,16 +8548,39 @@ a.widget .widget-image img.landscape {
 	padding: 15px;
 	position: relative;
 }
-.grow-block:hover *{
+.grow-block:hover {
+	cursor: pointer;	
+}
+.grow-block:hover .grow-item{
 	transform: scale(1.1);
-	cursor: auto;
 	z-index: 2001;
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
 	transition: all 0.2s ease-in-out;
+	text-decoration: none !important;
+}
+.grow-header:hover{
+	text-decoration: none !important;
 }
 .grow-block:hover .csm-penguin{
 	transform: scale(1.1) rotate(8.09deg);
+}
+.grow-block-anchor{
+	visibility: hidden;
+	position: absolute;
+	top: 80px;
+	left: 10%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	-moz-transform: none;
+    -webkit-transform: none;
+    -o-transform: none;
+    -ms-transform: none;
+    transform: none;
+}
+.grow-block-anchor dd{
+	text-align: left;
 }
 .grow-block *{
 	-webkit-transition: all 0.2s ease-in-out;
