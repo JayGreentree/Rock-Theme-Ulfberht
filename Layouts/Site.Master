@@ -208,6 +208,24 @@
 				}
 			});
 		</script>
+				
+		<!--Start of Zopim Live Chat Script-->
+		<script type="text/javascript">
+			if( $('#zone-login:contains("Logout")').length ){}
+			else
+			{
+				window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+				d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+				_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');
+				$.src='//v2.zopim.com/?DiT33K121qw1hltnghgwMQBK0paaHNdJ';z.t=+new Date;$.
+				type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');
+					$zopim(function() {
+					$zopim.livechat.bubble.setColor('#9fbb99');
+					$zopim.livechat.theme.reload();
+				  });
+			}
+		</script>
+		<!--End of Zopim Live Chat Script-->
         
 		<%-- controls for scriptmanager and update panel --%>
         <asp:ScriptManager ID="sManager" runat="server"/>
