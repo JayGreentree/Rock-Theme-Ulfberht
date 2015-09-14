@@ -1393,12 +1393,12 @@ h2.title-on-bottom {
 	overflow-x: hidden;
 }
 /* query added to keep class from hugging left on mobile */
-@media (max-width: 767px) {
+/*@media (max-width: 767px) { //this little punk caused mobile margin issues, you live you learn I guess...
   .container,
   h2.title-on-bottom {
     left: 15px !important;
   }
-}
+}*/
 @media (min-width: 768px) {
   .container,
   h2.title-on-bottom {
@@ -6725,6 +6725,9 @@ footer.site-footer ul li:first-of-type a:focus {
   font-family: "cc-icons";
   font-size: 20px;
   position: absolute;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
 }
 .social-nav a:hover:before,
 .social-nav a:focus:before {
@@ -6772,6 +6775,9 @@ footer.site-footer ul li:first-of-type a:focus {
     position: absolute;
     bottom: 17px;
 	padding-left: 5px;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
 }
 .social-video:focus,
 .social-video:hover,
@@ -6789,6 +6795,9 @@ footer.site-footer ul li:first-of-type a:focus {
     position: absolute;
     bottom: 12px;
 	padding-left: 5px;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
 }
 .footer-location {
   color: #ffffff;
@@ -6933,7 +6942,7 @@ a.view-all {
   text-align: center;
   top: 30px;
   width: 100%;
-	z-index: 2001;
+	z-index: 150;
 }
 @media (min-width: 992px) {
   a.view-all {
@@ -6960,6 +6969,9 @@ button.button {
   position: relative;
   text-transform: uppercase;
   z-index: 100;
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
 }
 a.button:after,
 button.button:after {
@@ -7175,18 +7187,38 @@ a.widget:focus {
 a.widget:hover .widget-image img,
 a.widget:focus .widget-image img {
   opacity: 0.75;
+	
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+
 }
 a.widget:hover h5,
 a.widget:focus h5 {
   color: #000000;
+	
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+
 }
 a.widget:hover [class*=cat-],
 a.widget:focus [class*=cat-] {
   color: #76908b;
+	
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+
 }
 a.widget:hover [class*=cat-]:before,
 a.widget:focus [class*=cat-]:before {
   color: #9fbb99;
+	
+	-webkit-transition: all 405ms ease-in-out;
+	-o-transition: all 405ms ease-in-out;
+	transition: all 405ms ease-in-out;
+
 }
 .sidebar-nav {
   -webkit-box-sizing: border-box;
