@@ -7272,6 +7272,9 @@ a.widget:focus [class*=cat-]:before {
   box-shadow: none;
   padding: 0;
 }
+div.panel-heading{
+	padding: 0px 0px 5px 0px !important; /* responsive collapsing side panels touching on hover */
+}
 .panel-group h4.panel-title a {
   border: none;
   border-radius: 4px;
@@ -7563,6 +7566,19 @@ a.widget:focus [class*=cat-]:before {
 .video-wrapper iframe.visible {
   display: block;
 }
+#video-back:hover{
+	cursor: pointer;
+}
+#video-back{
+	position: absolute;
+	top: 50px;
+    right: 0px;
+	padding: 15px;
+    color: rgba(255,255,255,0.7);
+    font-size: 48px;
+    z-index: 50;
+	display: none;
+}
 .event h1 + p {
   margin-top: 60px;
 }
@@ -7735,6 +7751,16 @@ h2.title-on-bottom {
   position: absolute;
   right: 0;
   text-align: left;
+}
+@media (max-width: 767px){
+	h2.title-on-bottom {
+	  bottom: 0;
+	  left: 0;
+	  padding: 0 25px;  /* mobile title was hugging left this= quickfix*/
+	  position: absolute;
+	  right: 0;
+	  text-align: left;
+	}
 }
 .content-tabs {
   -webkit-box-sizing: border-box;
@@ -8528,6 +8554,68 @@ ul.direction-buttons li button.button{
   width: 250px;
 }
 
+/******* Events Custom Css ********/
+td.calendar-next-prev{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.calendar-title > tbody > tr > td{
+	font-size: 1.2em;
+}/*
+td.calendar-next-prev + td{
+	font-size: 1.2em;
+}*/
+.calendar + div.rock-control-wrapper{
+	margin-top: 15px;
+}
+.calendar-day-header{
+	text-align: center;
+	background: #9fbb99;
+}
+.calendar-selected{
+	background: #76908b !important;
+}
+.calendar-month > tbody > tr > td > a{
+    padding: 5px 8px;
+}
+.calendar-month {
+	background-color: #fff;
+}
+.calendar-month > tbody > tr > td > a:hover{
+	text-decoration: none;
+}
+.event-panel-title{
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: inherit;
+	width: 97%;
+	line-height: 1.2em;
+}
+.event-panel-title + div.pull-right{
+    padding-right: 5px;
+}
+.socialsharing{
+	list-style-type: none;
+	padding-left: 0px;
+	width: 50%;
+    margin: 0px auto;
+    text-align: center;
+	padding-bottom: 30px;
+}
+h1.socialsharing{
+    padding-bottom: 5px;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.socialsharing > li > a:hover{
+	text-decoration: none;
+}
+.socialsharing > li{
+    display: inline;
+	font-size: 1.618em;
+}
 /******* Handlers for "WhatsHappening" area ********/
 a.widget .widget-image img.portrait {
 	width: 100%;
@@ -8597,11 +8685,16 @@ a.widget .widget-image img.landscape {
 .grow-block:hover .csm-penguin{
 	transform: scale(1.1) rotate(8.09deg);
 }
+.grow-block-anchor > h2{
+	padding: 0;
+	margin-top: 10px;
+}
 .grow-block-anchor{
 	visibility: hidden;
 	position: absolute;
 	top: 80px;
-	left: 10%;
+	width: 100%;
+	/*left: 10%;*/
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
