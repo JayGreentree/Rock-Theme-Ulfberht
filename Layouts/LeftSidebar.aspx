@@ -7,8 +7,9 @@
         <!-- Start Content Area -->
         
         <!-- Page Title -->
-        <Rock:PageIcon ID="PageIcon" runat="server" /> <h1><Rock:PageTitle ID="PageTitle" runat="server" /></h1>
-        <Rock:PageBreadCrumbs ID="PageBreadCrumbs" runat="server" />
+        <section class="callout-full-width bg-image-004 feature" style="background: url(/Content/ExternalSite/Headers/Mainbanner.jpg);  background-position: 50% 45%; background-size: cover;">
+            <h2 class="white title-on-bottom"><Rock:PageTitle ID="PageTitle" runat="server" /></h2>
+        </section>
                     
         <!-- Ajax Error -->
         <div class="alert alert-danger ajax-error" style="display:none">

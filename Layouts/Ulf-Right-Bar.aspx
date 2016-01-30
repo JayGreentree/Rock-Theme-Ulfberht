@@ -19,7 +19,9 @@
             <p><strong>Error</strong></p>
             <span class="ajax-error-message"></span>
         </div>
-
+        <section class="callout-full-width bg-image-004 feature" style="background: url(/Content/ExternalSite/Headers/Mainbanner.jpg);  background-position: 50% 45%; background-size: cover;">
+            <h2 class="white title-on-bottom"><Rock:PageTitle ID="PageTitle" runat="server" /></h2>
+        </section>
         
 
         <div class="row">
